@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Men bilan bogʻlaning</title>
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="../contact.css">
+  <link rel="stylesheet" href="../main.css">
+</head>
+
+<body>
+  
+    <header class="main-header">
+    <div class="container">
+      <div class="main-header__brand">
+        <a href="box.html">
+          <img src="../Picsart_24-10-22_14-53-34-482.png">
+        </a>
+      </div>
+      <nav class="main-navigation">
+        <ul class="main-navigation__items">
+          <li class="main-navigation__item">
+            <a href="../index.html" class="aa">Asosiy</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__items">
+          <li class="main-navigation__item active">
+            <a href="#" class="aa">Men haqimda</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__items">
+          <li class="main-navigation__item">
+            <a href="#">Mutaxassislik</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__items">
+          <li class="main-navigation__item">
+            <a href="#">Hobbiylar</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__items">
+          <li class="main-navigation__item">
+            <a href="#">Ish</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__items">
+          <li class="main-navigation__item">
+            <a href="../contact.html">Bogʻlaning</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  
+  <div class="container">
+  <section class="contact">
+    <div class="section-title">
+      Men bilan bog'laning
+    </div>
+    <form action="/server.php" method="GET">
+      <textarea rows="10" placeholder="Xabaringizni kiriting" name="message"></textarea>
+      <div class="half-row contact_firstname">
+        <input type="text" placeholder="Ismingizni kiriting" name="firstname">
+      </div>
+      <div class="half-row contact_email">
+        <input type="email" placeholder="Emailingizni kiriting" name="email">
+      </div>
+      <input type="text" placeholder="Xat mazmuni" name="subject">
+      <button class="button contact_send" type="submit">Xabar jo'natish</button>
+    </form>
+  </section>
+</div>
+</body>
+
+</html>

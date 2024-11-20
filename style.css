@@ -1,0 +1,283 @@
+body {
+  height: 10000px;
+}
+
+.p-fixed {
+  width: 100px;
+  height: 12px;
+  background-color: darkblue;
+  position: fixed;
+  top: 0;
+  bottom: 120px;
+}
+
+.p-relative {
+  width: 50px;
+  height: 65px;
+  text-transform: capitalize;
+  background-color: green;
+}
+
+.p-absolute {
+  position: relative;
+  width: 150px;
+  height: 160px;
+  border: 3px solid blue;
+}
+
+.p-absolute__div {
+  position: absolute;
+  background-color: yellowgreen;
+  top: 10px;
+  right: 0;
+}
+
+.p-sticky {
+  position: sticky;
+  border: 5px solid darkred;
+  top: 10px;
+}
+
+.minis {
+  position: sticky;
+  top: 1px;
+  lef: 5px;
+  border: 1px solid deeppink;
+}
+
+.z1 {
+  position: relative;
+  background-color: blue;
+  border: 1px solid red;
+  height: 150px;
+  top: 100px;
+  z-index: 1;
+
+}
+
+.z2 {
+  position: relative;
+  background-color: red;
+  bottom: 100px;
+  height: 150px;
+}
+
+.overflowcha {
+  width: 320px;
+  height: 120px;
+  background-color: darkred;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.overflowcha2 {
+  width: 320px;
+  height: 120px;
+  background-color: darkred;
+  margin-bottom: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.overflowcha3 {
+  width: 50px;
+  height: 80px;
+  background-color: darkred;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.p {
+  background-image: url("././ser1.jpg");
+  height: 800px;
+  background-repeat: no-repeat;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.a {
+  border: 3px solid darkred;
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-position: top right;
+  opacity: 0.5;
+  background-image: url("././Nature.jpeg");
+}
+
+.gradient-box {
+  width: 600px;
+  height: 800px;
+  background-image: linear-gradient( to left top, red, black)
+}
+
+.radial {
+  width: 600px;
+  height: 800px;
+  background-image: radial-gradient(blue 0% pink 51%);
+}
+
+.radial {
+  width: 600px;
+  height: 800px;
+  background-image: radial-gradient(blue 0%, pink 51%);
+}
+
+
+
+.filter {
+  width: 600px;
+  height: 800px;
+  background-image: url('././Nature.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: blur(5px);
+}
+
+.container {
+  padding: 30px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #2e856f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #006a4e;
+}
+
+/* Radio button uchun container 
+
+.form-control { 
+    display: block; 
+    position: relative;
+    padding-left: 36px; 
+    margin-bottom: 10px; 
+    cursor: pointer; 
+    font-size: 24px; 
+} */
+
+.form-control {
+  display: block;
+  position: relative;
+  padding-left: 36px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Brauzerning radio buttonni berkitish 
+
+.form-control input { 
+  
+  position: absolute; opacity: 0; 
+  cursor: pointer; 
+} */
+
+.form-control input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+  
+  /* Maxsus radio buttonga style berish 
+  
+ .custom-radio {    
+     position: absolute;    
+     top: 0;    left: 0;    
+     height: 24px;    
+     width: 24px;    
+     background-color: #ddd;    
+     border-radius: 50%;  
+     
+   }   */
+   
+.custom-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+   /* Sichqoncha olib borilganda orqa fon rangini o'zgartirish  
+   
+   .form-control:hover input ~ .custom-radio {    
+     background-color: #ccc;  
+     
+   }   */
+   
+.form-control:active input ~ .custom-radio {
+  background-color: #ccc;
+}
+   
+   /* Radio button tanlanganda, uning orqa fon rangini o'zgartirish 
+   
+   .form-control input:checked ~ .custom-radio {    
+     background-color: #2D846E;  
+     
+   }    */
+.form-control input:checked ~ .custom-radio {
+  background-color: #2d846e;
+}
+   
+   /* Radio button tanlanganligini bildiruvchi belgi yaratish 
+   
+   .custom-radio:after {   
+     top: 8px;   
+     left: 8px;   
+     width: 8px;   
+     height: 8px;   
+     border-radius: 50%;   
+     background: white;    
+     content: "";    
+     position: absolute;    
+     display: none;  }   */
+
+.custom-radio:after {
+  top: 8px;
+  left: 8px;
+  width: 8;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  content: "";
+  position: absolute;
+  display: none;
+}
+     
+     /* Tanlangan paytida belgini ko'rsatish 
+     
+     .form-control input:checked ~ .custom-radio:after {    
+       display: block;  
+     } */
+
+.form-control input:checked ~ .custom-radio:after {
+  display: block;
+}
+     
+     */
+  .form-control { 
+    /*display: block; 
+    position: relative;
+    padding-left: 36px; 
+    margin-bottom: 10px; 
+    cursor: pointer; 
+    font-size: 24px;*/
