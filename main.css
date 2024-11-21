@@ -484,3 +484,204 @@
   display: inline-block;
   padding: 0 10px;
 }
+
+/* footer */
+
+.footer {
+  padding: 100px 0;
+  background-color: #021017;
+  /* margin-top: 50px; */
+  text-align: center;
+}
+
+.footer__brand img {
+  width: 128px;
+}
+
+.footer-navigation {
+  margin-bottom: 50px;
+}
+
+.footer-navigation__items {
+  display: inline-block;
+  /* padding: 0 10px; */
+}
+
+.footer-navigation__item {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.footer-navigation__item a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-navigation__item a:hover {
+  color: yellow;
+}
+
+
+.footer__socials {
+  list-style: none;
+}
+
+.footer__social {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 36px;
+  color: #05364D;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.footer__social:hover {
+  background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+}
+
+.footer__social:hover i {
+  color: white;
+}
+
+.footer__social a {
+  color: #021017;
+}
+
+.footer__text {
+  color: #797979;
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* main header */
+
+  .container {
+    width: 96%;
+  }
+
+  .main-navigation {
+    display: none;
+  }
+
+  .main-banner {
+    background: none;
+    min-height: auto;
+  }
+
+  .main-section__img {
+    display: none;
+  }
+
+  .main-section__action {
+    display: none;
+  }
+
+  .main-section > div {
+    width: 100%;
+  }
+
+  .main-section__info {
+    text-align: center;
+  }
+
+  /* statistics */
+
+  .statistics__item {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  /* about */
+
+  .about-me {
+    /* padding: 50px 50px; */
+  }
+
+  .about-me > div {
+    width: 100%;
+  }
+
+  /* .about-me__info {
+    
+  } */
+
+  .about-me__info {
+    /* display: none; */
+    width: 100%;
+    /* padding: 0 50px; Kichik ekranlar uchun mos ichki bo'shliq */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .about-me__img img {
+    display: none;
+  }
+
+  /* services */
+
+  .services {
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+  .service-card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  /* client */
+
+  .client-item > div {
+    width: 100%;
+    float: none;
+  }
+
+  /* porfolio */
+
+  .portfolio {
+    padding: 12px;
+  }
+  .portfolio-item {
+    width: 100%;
+  }
+
+  .portfolio-item-2, .portfolio-item-3 {
+    position: static;
+  }
+
+  .blog {
+    padding: 12px;
+  }
+
+  .blog-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .partners {
+    padding: 12px;
+  }
+
+  .partner {
+    display: block;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-navigation {
+    display: none;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 50px;
+  }
+}
