@@ -563,6 +563,10 @@
     width: 96%;
   }
 
+  .main-header {
+    display: none;
+  }
+
   .main-navigation {
     display: none;
   }
@@ -681,7 +685,9 @@
   }
 
   .footer {
+    display: inline-block;
     width: 100%;
     padding: 50px;
+    
   }
 }
