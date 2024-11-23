@@ -3,7 +3,7 @@
 
 .main-header {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   background-color: white;
   width: 100%;
@@ -630,8 +630,9 @@
   /* services */
 
   .services {
-    padding: 1.5rem 0;
+    /* padding: 1.5rem 0; */
     text-align: center;
+    width: 100%;
   }
   .service-card {
     width: 100%;
@@ -688,6 +689,12 @@
     display: inline-block;
     width: 100%;
     padding: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 3px 16px 0px rgb(0 0 0 /10%);
+    z-index: 10;
     
   }
 }
